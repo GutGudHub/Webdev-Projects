@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+</head>
+<body>  
+    <div>
+        <h1 id="title">Survey Form</h1>    
+        <p id="description">Vielen Dank, dass du dir Zeit nimmst</p>
+    </div>
+    <div>
+        <form id="survey-form">
+            <div>
+                <div>
+                    <label id="name-label" for="name">Name:</label>
+                    <input id="name" name="name" type="text" placeholder="Dein Name" required>
+                </div>
+                <div>
+                    <label id="email-label" for="email">Email:</label>
+                    <input id="email" name="email" type="email" placeholder="Deine Email" required>
+                </div>
+                <div>
+                    <label id="number-label" for="number">Nummer:</label>
+                    <input id="number" name="number" type="number" min="0" max="100" placeholder="0-100">
+                </div>
+            </div>
+            <div>
+                <label for="dropdown"></label>
+                <select name="dropdown" id="dropdown">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </div>
+            <div id="radio">
+                <input type="radio" name="group1" value="radio1"> Radio 1
+                <input type="radio" name="group1" value="radio2"> Radio 2
+                <input type="radio" name="group1" value="radio3"> Radio 3
+            </div>
+            <div id="checkbox">
+                <input type="checkbox" name="cb2" value="1"> Check 1
+                <input type="checkbox" name="cb1" value="2"> Check 2
+                <input type="checkbox" name="cb1" value="3"> Check 3
+            </div>
+            <div id="textarea">
+                <label for="textareaid">Kommentare</label>
+                <textarea name="textare1" id="textareaid" cols="30" rows="5">Bitte gib hier deine Kommentare ein</textarea>
+            </div>
+            <div>
+                <input id="submit" type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
